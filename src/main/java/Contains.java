@@ -19,8 +19,7 @@ public class Contains {
             if (arr[i] == target) {
                 n = true;
             }
-       }
-       
+       }       
        return n;
     }
-    }
+}
