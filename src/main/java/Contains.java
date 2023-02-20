@@ -1,4 +1,6 @@
-
+import java.lang.reflect.Array;
+import java.util.Arrays;
+import java.util.List;
 
 public class Contains {
 
@@ -10,7 +12,15 @@ public class Contains {
      * @param target the value that the method should be searching for.
      * @return true if arr contains target, false otherwise.
      */
-    public boolean arrayContains(int[] arr, int target){
-        return false;
+    public boolean arrayContains(int[] arr, int target) {
+       boolean n = false;
+
+       for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == target) {
+                n = true;
+            }
+       }
+       
+       return n;
     }
-}
+    }
